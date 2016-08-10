@@ -1,0 +1,11 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =9
+let g:netrw_dirhist_1='/home/nagappan/code/webhooks-recrawl/sem3-webhooks-fire-service'
+let g:netrw_dirhist_2='/home/nagappan/code/dockerization/sem3-api-nginx/sites-enabled'
+let g:netrw_dirhist_3='/home/nagappan/code/dockerization/api/lib/search'
+let g:netrw_dirhist_4='/home/nagappan/code/dockerization/api/lib'
+let g:netrw_dirhist_5='/home/nagappan/code/dockerization/sem3-api-realtime/lib/errors'
+let g:netrw_dirhist_6='/home/nagappan/code/dockerization/Infrastructure/Dockerfiles'
+let g:netrw_dirhist_7='/home/nagappan/code/Sem3Atthi/lib'
+let g:netrw_dirhist_8='/home/nagappan/code/dockerization/sem3-api-realtime/config'
+let g:netrw_dirhist_9='/home/nagappan/projects/Sem3BulkPush-Process/t/sqlcreate'
