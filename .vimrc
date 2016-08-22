@@ -20,8 +20,11 @@ Plugin 'altercation/vim-colors-solarized.git'
 Plugin 'vim-perl/vim-perl'
 "Plugin 'vim-scripts/perl-support.vim'
 Plugin 'vim-scripts/tComment'
+Bundle 'ervandew/supertab'
 Plugin 'Valloric/YouCompleteMe'
 Plugin 'SirVer/ultisnips'
+Plugin 'algotech/ultisnips-javascript'
+Plugin 'honza/vim-snippets'
 Plugin 'jelera/vim-javascript-syntax'
 Plugin 'majutsushi/tagbar'
 Plugin 'jistr/vim-nerdtree-tabs'
@@ -43,6 +46,16 @@ filetype plugin indent on    " required
 " see :h vundle for more details or wiki for FAQ
 " Put your non-Plugin stuff after this line
 
+" make YCM compatible with UltiSnips (using supertab)
+let g:ycm_key_list_select_completion = ['<C-j>', '<Down>']
+let g:ycm_key_list_previous_completion = ['<C-k>', '<Up>']
+let g:SuperTabDefaultCompletionType = '<C-n>'
+
+" better key bindings for UltiSnipsExpandTrigger
+let g:UltiSnipsExpandTrigger = "<tab>"
+let g:UltiSnipsJumpForwardTrigger = "<tab>"
+let g:UltiSnipsJumpBackwardTrigger = "<s-tab>"
+
 " automatically reload vimrc when it's saved
 au BufWritePost .vimrc so ~/.vimrc
 
@@ -51,14 +64,14 @@ set background=dark
 colorscheme distinguished
 
 " size of a hard tabstop
-set tabstop=4
+set tabstop=2
 
 " size of an "indent"
-set shiftwidth=4
+set shiftwidth=2
 
 " a combination of spaces and tabs are used to simulate tab stops at a width
 " other than the (hard)tabstop
-set softtabstop=4
+set softtabstop=2
 
 " make "tab" insert indents instead of tabs at the beginning of a line
 set smarttab
