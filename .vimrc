@@ -103,7 +103,7 @@ inoremap <Nul>   <C-n>
 
 " tab navigation like firefox
 nnoremap <S-tab> :tabprevious<CR>
-" nnoremap <tab>   :tabnext<CR>
+nnoremap <tab>   :tabnext<CR>
 nnoremap <C-f> :FZF<CR>
 
 " This is the default extra key bindings
