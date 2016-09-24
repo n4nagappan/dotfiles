@@ -31,6 +31,7 @@ Plugin 'jistr/vim-nerdtree-tabs'
 Plugin 'fatih/vim-go'
 Plugin 'leafgarland/typescript-vim'
 Plugin 'tpope/vim-surround'
+Plugin 'junegunn/fzf'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -102,7 +103,11 @@ inoremap <Nul>   <C-n>
 
 " tab navigation like firefox
 nnoremap <S-tab> :tabprevious<CR>
-nnoremap <tab>   :tabnext<CR>
+" nnoremap <tab>   :tabnext<CR>
+nnoremap <C-f> :FZF<CR>
+
+" This is the default extra key bindings
+let g:fzf_action = { 'ctrl-f': 'tab split'}
 
 " persistent undo
 set undofile                " Save undo's after file closes
@@ -145,3 +150,7 @@ let g:go_fmt_autosave = 1
 
 
 set pastetoggle=<F2>
+
+" If installed using git
+set rtp+=~/.vim/bundle/fzf/fzf
+nmap <leader><tab> <plug>(fzf-maps-n)
