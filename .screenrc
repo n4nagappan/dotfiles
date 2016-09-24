@@ -1,0 +1,13 @@
+defscrollback 5000
+altscreen on
+autodetach on
+vbell off
+caption always " | %-w%{= BW}%40L>%n %t%{-}%+w |%<"
+hardstatus alwayslastline
+# Turn off that annoying start up message
+startup_message off
+# Turn the even more annoying whole-screen-flash-on-tab-complete "feature"
+vbell off
+# Window list at the bottom. hostname, centered tabs and redmarked active windows:
+hardstatus string '%{= kG}[ %{G}%H %{g}][%= %{= kw}%?%-Lw%?%{r}(%{W}%n*%f%t%?(%u)%?%{r})%{w}%?%+Lw%?%?%= %{g}][%{B} %d/%m %{W}%c %{g}]'
+shell -$SHELL
