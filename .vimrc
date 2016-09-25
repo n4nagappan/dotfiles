@@ -154,3 +154,13 @@ set pastetoggle=<F2>
 " If installed using git
 set rtp+=~/.vim/bundle/fzf/fzf
 nmap <leader><tab> <plug>(fzf-maps-n)
+
+" This is the default extra key bindings
+let g:fzf_action = {
+  \ 'ENTER': 'tab split',
+  \ 'ctrl-x': 'split',
+  \ 'ctrl-v': 'vsplit' }
+
+" Default fzf layout
+" - down / up / left / right
+let g:fzf_layout = { 'down': '~40%' }
