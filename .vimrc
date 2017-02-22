@@ -126,6 +126,7 @@ let vimsyn_folding='af'       " Vim script
 let xml_syntax_folding=1      " XML
 
 map <Leader> <Plug>(easymotion-prefix)
+map f <Plug>(easymotion-bd-w)
 
 " Go configs
 au FileType go nmap <leader>r <Plug>(go-run)
