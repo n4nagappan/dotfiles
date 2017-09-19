@@ -164,3 +164,8 @@ let g:fzf_action = {
 " Default fzf layout
 " - down / up / left / right
 let g:fzf_layout = { 'down': '~40%' }
+
+command WQ wq
+command Wq wq
+command W w
+command Q q
