@@ -165,6 +165,8 @@ let g:fzf_action = {
 " - down / up / left / right
 let g:fzf_layout = { 'down': '~40%' }
 
+set splitright
+
 command WQ wq
 command Wq wq
 command W w
