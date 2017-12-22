@@ -12,7 +12,9 @@ function doIt() {
 		--exclude "LICENSE-MIT.txt" \
 		--exclude "**.swp" \
 		-avh --no-perms . ~;
-	source ~/.bash_profile;
+  git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+  vim +PluginInstall +qall
+	source ~/.bashrc;
 }
 
 if [ "$1" == "--force" -o "$1" == "-f" ]; then
