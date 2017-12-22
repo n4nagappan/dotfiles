@@ -14,6 +14,9 @@ function doIt() {
 		-avh --no-perms . ~;
   git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
   vim +PluginInstall +qall
+  # ycmd setup
+  cd ~/.vim/bundle/YouCompleteMe/
+  ./install.py
 	source ~/.bashrc;
 }
 
