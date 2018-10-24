@@ -21,6 +21,9 @@ function doIt() {
   cd ~/.vim/bundle/YouCompleteMe/
   ./install.py
 
+  cd ~/.vim/bundle/vim-prettier/
+  npm install
+
 	source ~/.bashrc;
 }
 

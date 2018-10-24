@@ -32,6 +32,7 @@ Plugin 'fatih/vim-go'
 Plugin 'leafgarland/typescript-vim'
 Plugin 'tpope/vim-surround'
 Plugin 'junegunn/fzf'
+Plugin 'prettier/vim-prettier', { 'do': 'yarn install' }
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
